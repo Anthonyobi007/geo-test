@@ -1,26 +1,23 @@
-pipeline{
-    agent any
+ pipeline
+    agent any 
     tools{
-        maven 'M2_HOME'
+         maven 'M2_HOME'
     }
-    stages {
+    stages{
     stage('maven clean'){
         steps{
-            sh 'mvn clean'
+        sh  'mvn clean'
         }
     }
-   stage('maven install'){
-    steps{
-        sh 'install'
-
+    stage('maven install'){
+        steps{
+          sh  'mvn install'
+            
+        }
     }
-   }
-   stage('maven package'){
-    steps{
-      sh 'mvn package'
+    stage('maven package'){
+        steps{
+         sh   'mvn package'
+        }
     }
-   }
-
-}
-
-}
+    }
