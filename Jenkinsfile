@@ -24,7 +24,7 @@
         steps{
             nexusArtifactUploader artifacts: [[artifactId: 'bioMedical',
              classifier: '',
-              file: 'target/bioMedical-0.0.2-SNAPSHOT.jar', 
+              file: 'target/bioMedical-0.0.1-SNAPSHOT.jar', 
               type: 'jar']], 
               credentialsId: 'NexusID',
                groupId: 'qa',
