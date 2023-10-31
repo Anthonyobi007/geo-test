@@ -1,5 +1,8 @@
 pipeline{
     agent any
+    tools{
+        maven 'M2_HOME'
+    }
     stages {
     stage('maven clean'){
         steps{
@@ -14,7 +17,7 @@ pipeline{
    }
    stage('maven package'){
     steps{
-        'mvn package'
+      sh 'mvn package'
     }
    }
 
