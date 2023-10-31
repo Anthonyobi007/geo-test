@@ -1,7 +1,7 @@
    pipeline{
     agent any 
     tools{
-         maven 'M2_HOME'
+         maven 'https://dlcdn.apache.org/maven/maven-3/3.9.5/binaries/apache-maven-3.9.5-bin.tar.gz'
     }
     stages{
     stage('maven clean'){
