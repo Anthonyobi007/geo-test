@@ -28,7 +28,7 @@
               type: 'jar']], 
               credentialsId: 'NexusID',
                groupId: 'qa',
-                nexusUrl: '198.58.119.40:8081/repository/Pocotua-repo/',
+                nexusUrl: '198.58.119.40:8081',
                  nexusVersion: 'nexus3',
                   protocol: 'http', 
                   repository: 'prof-repo',
